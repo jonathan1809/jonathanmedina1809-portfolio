@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import { useLanguage } from "@/lib/language-context";
+import { getTranslations } from "@/lib/translations";
 import { LinkedInIcon, GitHubIcon, EmailIcon } from "@/components";
 
 interface FooterProps {
@@ -8,6 +10,8 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ className = "" }) => {
+  const { language } = useLanguage();
+  const t = getTranslations(language);
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
@@ -35,22 +39,21 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-blue-400">Jonathan Medina</h3>
-            <p className="text-gray-400 text-sm">
-              Full Stack Developer passionate about creating clean, scalable,
-              and user-friendly applications.
-            </p>
+            <p className="text-gray-400 text-sm">{t.footer.description}</p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-white">
+              {t.footer.quickLinks}
+            </h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a
                   href="#about"
                   className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
                 >
-                  About
+                  {t.navigation.about}
                 </a>
               </li>
               <li>
@@ -58,7 +61,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                   href="#skills"
                   className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
                 >
-                  Skills
+                  {t.navigation.skills}
                 </a>
               </li>
               <li>
@@ -66,7 +69,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                   href="#experience"
                   className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
                 >
-                  Experience
+                  {t.navigation.experience}
                 </a>
               </li>
               <li>
@@ -74,7 +77,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                   href="#projects"
                   className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
                 >
-                  Projects
+                  {t.navigation.projects}
                 </a>
               </li>
               <li>
@@ -82,7 +85,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                   href="#contact"
                   className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
                 >
-                  Contact
+                  {t.navigation.contact}
                 </a>
               </li>
             </ul>
@@ -90,12 +93,12 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Get in Touch</h4>
+            <h4 className="text-lg font-semibold text-white">
+              {t.footer.getInTouch}
+            </h4>
             <div className="space-y-2 text-sm">
               <p className="text-gray-400">📧 jonathangomez117@outlook.com</p>
-              <p className="text-gray-400">
-                🌍 Available for remote work worldwide
-              </p>
+              <p className="text-gray-400">🌍 {t.footer.availableForWork}</p>
             </div>
           </div>
         </div>
@@ -104,7 +107,8 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Jonathan Medina. All rights reserved.
+              © {currentYear} Jonathan Medina.{" "}
+              {t.footer.copyright.split("© 2024 Jonathan Medina. ")[1]}
             </p>
 
             {/* Social Links */}

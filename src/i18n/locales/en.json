@@ -205,27 +205,102 @@
     "items": {
       "ecommerce": {
         "title": "E-commerce Platform",
-        "description": "A full-stack e-commerce solution built with Next.js, featuring real-time inventory management, payment processing, and admin dashboard."
+        "description": "A full-stack e-commerce solution built with Next.js, featuring real-time inventory management, payment processing, and admin dashboard.",
+        "features": [
+          "Real-time inventory management",
+          "Payment processing integration",
+          "Admin dashboard",
+          "User authentication",
+          "Order tracking",
+          "Product catalog management"
+        ]
       },
       "saas": {
         "title": "SaaS Dashboard",
-        "description": "A comprehensive SaaS management dashboard with analytics, user management, and subscription handling."
+        "description": "A comprehensive SaaS management dashboard with analytics, user management, and subscription handling.",
+        "features": [
+          "Analytics dashboard",
+          "User management",
+          "Subscription handling",
+          "Billing integration",
+          "Usage tracking",
+          "Multi-tenant architecture"
+        ]
       },
       "taskManagement": {
         "title": "Task Management App",
-        "description": "A collaborative task management application with real-time updates, team collaboration, and progress tracking."
+        "description": "A collaborative task management application with real-time updates, team collaboration, and progress tracking.",
+        "features": [
+          "Real-time updates",
+          "Team collaboration",
+          "Progress tracking",
+          "Task assignments",
+          "Deadline management",
+          "File attachments"
+        ]
       },
       "portfolio": {
         "title": "Portfolio Website",
-        "description": "A modern portfolio website built with Next.js and Tailwind CSS, featuring dark mode and responsive design."
+        "description": "A modern portfolio website built with Next.js and Tailwind CSS, featuring dark mode and responsive design.",
+        "features": [
+          "Dark mode support",
+          "Responsive design",
+          "Contact form",
+          "Project showcase",
+          "Blog section",
+          "Multi-language support"
+        ]
       },
       "apiGateway": {
         "title": "API Gateway",
-        "description": "A microservices API gateway built with NestJS, featuring authentication, rate limiting, and request routing."
+        "description": "A microservices API gateway built with NestJS, featuring authentication, rate limiting, and request routing.",
+        "features": [
+          "Authentication",
+          "Rate limiting",
+          "Request routing",
+          "Load balancing",
+          "Monitoring",
+          "Security middleware"
+        ]
       },
       "mobileBackend": {
         "title": "Mobile App Backend",
-        "description": "A scalable backend for mobile applications with real-time notifications and data synchronization."
+        "description": "A scalable backend for mobile applications with real-time notifications and data synchronization.",
+        "features": [
+          "Real-time notifications",
+          "Data synchronization",
+          "Push notifications",
+          "User management",
+          "File storage",
+          "API endpoints"
+        ]
+      },
+      "excursionesLola": {
+        "title": "Excursiones Lola - Travel Agency",
+        "description": "Complete platform for a travel agency with over 10 years of experience in Aguascalientes. Booking system, destination management and optimized user experience.",
+        "features": [
+          "Real-time booking system",
+          "Destination and tour package management",
+          "Native mobile app (Android/iOS)",
+          "Complete admin panel",
+          "WhatsApp Business integration",
+          "Testimonials and ratings system",
+          "Scheduled trips calendar",
+          "Secure online payments"
+        ]
+      },
+      "portfolio": {
+        "title": "Personal Portfolio",
+        "description": "Professional portfolio developed with Next.js, TypeScript and Tailwind CSS. Includes dark mode, multi-language support and responsive design.",
+        "features": [
+          "Modern responsive design",
+          "Dark/light mode",
+          "Multi-language support (ES/EN)",
+          "Framer Motion animations",
+          "Private blog section",
+          "Functional contact form",
+          "Atomic Design architecture"
+        ]
       }
     }
   },
@@ -285,6 +360,30 @@
     "description": "Full Stack Developer passionate about creating clean, scalable, and user-friendly applications.",
     "quickLinks": "Quick Links",
     "getInTouch": "Get in Touch",
-    "copyright": "© 2024 Jonathan Medina. All rights reserved."
+    "copyright": "© 2024 Jonathan Medina. All rights reserved.",
+    "availableForWork": "Available for remote work worldwide"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "tryAgain": "Try again",
+    "dark": "Dark",
+    "light": "Light",
+    "currentlyExploring": "Currently Exploring",
+    "learning": "Learning",
+    "focusAreas": "Focus Areas",
+    "aiMlIntegration": "AI/ML Integration & Advanced Cloud Architecture",
+    "advancedTypescript": "Advanced TypeScript Patterns & System Design",
+    "performanceOptimization": "Performance Optimization & Scalable Solutions",
+    "loadingExperiences": "Loading experiences...",
+    "unableToLoadExperiences": "Unable to load experiences",
+    "failedToLoadExperiences": "Failed to load experiences",
+    "loadingProjects": "Loading projects...",
+    "unableToLoadProjects": "Unable to load projects",
+    "failedToLoadProjects": "Failed to load projects",
+    "technologiesAndTools": "Technologies & Tools",
+    "effectiveCommunication": "Effective communication and teamwork across diverse teams and cultures",
+    "buildingRobustSystems": "Building robust, scalable systems that grow with business needs",
+    "rapidIteration": "Rapid iteration and deployment with quality and reliability"
   }
 }

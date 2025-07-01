@@ -3,27 +3,32 @@
 import React from "react";
 import Card from "@/components/atoms/Card";
 import Badge from "@/components/atoms/Badge";
+import { useLanguage } from "@/lib/language-context";
+import { getTranslations } from "@/lib/translations";
 
 interface AboutSectionProps {
   className?: string;
 }
 
 const AboutSection: React.FC<AboutSectionProps> = ({ className = "" }) => {
+  const { language } = useLanguage();
+  const t = getTranslations(language);
+
   const highlights = [
     {
       icon: "🚀",
-      title: "6+ years of experience",
-      description: "Building web applications with modern technologies",
+      title: t.about.highlights.experience.title,
+      description: t.about.highlights.experience.description,
     },
     {
       icon: "🌍",
-      title: "International projects",
-      description: "Worked on projects in Sweden and other countries",
+      title: t.about.highlights.international.title,
+      description: t.about.highlights.international.description,
     },
     {
       icon: "🧹",
-      title: "Clean code advocate",
-      description: "Focus on maintainable and scalable architecture",
+      title: t.about.highlights.cleanCode.title,
+      description: t.about.highlights.cleanCode.description,
     },
   ];
 
@@ -35,12 +40,10 @@ const AboutSection: React.FC<AboutSectionProps> = ({ className = "" }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            About Me
+            {t.about.title}
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            I&apos;m a Full Stack Developer with over 6 years of experience
-            building web applications. I specialize in React, Next.js, and
-            Node.js, with a focus on clean code and scalable architecture.
+            {t.about.description}
           </p>
         </div>
 
@@ -49,27 +52,20 @@ const AboutSection: React.FC<AboutSectionProps> = ({ className = "" }) => {
           <div className="space-y-6">
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                My Journey
+                {t.about.journey}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                I started my journey as a developer over 6 years ago, and since
-                then, I&apos;ve had the privilege of working on diverse projects
-                across different industries. My experience spans from small
-                startups to large enterprises, giving me a well-rounded
-                perspective on software development.
+                {t.about.journeyText1}
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                I&apos;ve worked on international projects, particularly in
-                Sweden, where I learned the importance of collaboration,
-                communication, and delivering high-quality solutions that meet
-                both technical and business requirements.
+                {t.about.journeyText2}
               </p>
             </div>
 
             {/* Skills Preview */}
             <div className="space-y-3">
               <h4 className="text-lg font-medium text-gray-900 dark:text-white">
-                Core Technologies
+                {t.about.coreTechnologies}
               </h4>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="primary">React</Badge>

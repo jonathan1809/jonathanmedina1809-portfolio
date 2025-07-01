@@ -205,27 +205,102 @@
     "items": {
       "ecommerce": {
         "title": "Plataforma de E-commerce",
-        "description": "Una solución de e-commerce full-stack construida con Next.js, con gestión de inventario en tiempo real, procesamiento de pagos y panel de administración."
+        "description": "Una solución de e-commerce full-stack construida con Next.js, con gestión de inventario en tiempo real, procesamiento de pagos y panel de administración.",
+        "features": [
+          "Gestión de inventario en tiempo real",
+          "Integración de procesamiento de pagos",
+          "Panel de administración",
+          "Autenticación de usuarios",
+          "Seguimiento de pedidos",
+          "Gestión de catálogo de productos"
+        ]
       },
       "saas": {
         "title": "Dashboard SaaS",
-        "description": "Un dashboard integral de gestión SaaS con análisis, gestión de usuarios y manejo de suscripciones."
+        "description": "Un dashboard integral de gestión SaaS con análisis, gestión de usuarios y manejo de suscripciones.",
+        "features": [
+          "Dashboard de análisis",
+          "Gestión de usuarios",
+          "Manejo de suscripciones",
+          "Integración de facturación",
+          "Seguimiento de uso",
+          "Arquitectura multi-tenant"
+        ]
       },
       "taskManagement": {
         "title": "App de Gestión de Tareas",
-        "description": "Una aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real, colaboración en equipo y seguimiento de progreso."
+        "description": "Una aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real, colaboración en equipo y seguimiento de progreso.",
+        "features": [
+          "Actualizaciones en tiempo real",
+          "Colaboración en equipo",
+          "Seguimiento de progreso",
+          "Asignación de tareas",
+          "Gestión de fechas límite",
+          "Archivos adjuntos"
+        ]
       },
       "portfolio": {
         "title": "Sitio Web de Portafolio",
-        "description": "Un sitio web de portafolio moderno construido con Next.js y Tailwind CSS, con modo oscuro y diseño responsivo."
+        "description": "Un sitio web de portafolio moderno construido con Next.js y Tailwind CSS, con modo oscuro y diseño responsivo.",
+        "features": [
+          "Soporte para modo oscuro",
+          "Diseño responsivo",
+          "Formulario de contacto",
+          "Muestra de proyectos",
+          "Sección de blog",
+          "Soporte multiidioma"
+        ]
       },
       "apiGateway": {
         "title": "Puerta de Enlace API",
-        "description": "Una puerta de enlace API de microservicios construida con NestJS, con autenticación, limitación de velocidad y enrutamiento de solicitudes."
+        "description": "Una puerta de enlace API de microservicios construida con NestJS, con autenticación, limitación de velocidad y enrutamiento de solicitudes.",
+        "features": [
+          "Autenticación",
+          "Limitación de velocidad",
+          "Enrutamiento de solicitudes",
+          "Balanceo de carga",
+          "Monitoreo",
+          "Middleware de seguridad"
+        ]
       },
       "mobileBackend": {
         "title": "Backend de App Móvil",
-        "description": "Un backend escalable para aplicaciones móviles con notificaciones en tiempo real y sincronización de datos."
+        "description": "Un backend escalable para aplicaciones móviles con notificaciones en tiempo real y sincronización de datos.",
+        "features": [
+          "Notificaciones en tiempo real",
+          "Sincronización de datos",
+          "Notificaciones push",
+          "Gestión de usuarios",
+          "Almacenamiento de archivos",
+          "Endpoints de API"
+        ]
+      },
+      "excursionesLola": {
+        "title": "Excursiones Lola - Agencia de Viajes",
+        "description": "Plataforma completa para agencia de viajes con más de 10 años de experiencia en Aguascalientes. Sistema de reservas, gestión de destinos y experiencia de usuario optimizada.",
+        "features": [
+          "Sistema de reservas en tiempo real",
+          "Gestión de destinos y paquetes turísticos",
+          "Aplicación móvil nativa (Android/iOS)",
+          "Panel de administración completo",
+          "Integración con WhatsApp Business",
+          "Sistema de testimonios y calificaciones",
+          "Calendario de viajes programados",
+          "Pagos en línea seguros"
+        ]
+      },
+      "portfolio": {
+        "title": "Portfolio Personal",
+        "description": "Portfolio profesional desarrollado con Next.js, TypeScript y Tailwind CSS. Incluye modo oscuro, soporte multiidioma y diseño responsive.",
+        "features": [
+          "Diseño responsive y moderno",
+          "Modo oscuro/claro",
+          "Soporte multiidioma (ES/EN)",
+          "Animaciones con Framer Motion",
+          "Sección de blog privada",
+          "Formulario de contacto funcional",
+          "Arquitectura Atomic Design"
+        ]
       }
     }
   },
@@ -285,6 +360,30 @@
     "description": "Desarrollador Full Stack apasionado por crear aplicaciones limpias, escalables y fáciles de usar.",
     "quickLinks": "Enlaces Rápidos",
     "getInTouch": "Contáctame",
-    "copyright": "© 2024 Jonathan Medina. Todos los derechos reservados."
+    "copyright": "© 2024 Jonathan Medina. Todos los derechos reservados.",
+    "availableForWork": "Disponible para trabajo remoto mundialmente"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "tryAgain": "Intentar de nuevo",
+    "dark": "Oscuro",
+    "light": "Claro",
+    "currentlyExploring": "Actualmente Explorando",
+    "learning": "Aprendiendo",
+    "focusAreas": "Áreas de Enfoque",
+    "aiMlIntegration": "Integración de IA/ML y Arquitectura Cloud Avanzada",
+    "advancedTypescript": "Patrones Avanzados de TypeScript y Diseño de Sistemas",
+    "performanceOptimization": "Optimización de Rendimiento y Soluciones Escalables",
+    "loadingExperiences": "Cargando experiencias...",
+    "unableToLoadExperiences": "No se pudieron cargar las experiencias",
+    "failedToLoadExperiences": "Error al cargar las experiencias",
+    "loadingProjects": "Cargando proyectos...",
+    "unableToLoadProjects": "No se pudieron cargar los proyectos",
+    "failedToLoadProjects": "Error al cargar los proyectos",
+    "technologiesAndTools": "Tecnologías y Herramientas",
+    "effectiveCommunication": "Comunicación efectiva y trabajo en equipo a través de equipos diversos y culturas",
+    "buildingRobustSystems": "Construyendo sistemas robustos y escalables que crecen con las necesidades del negocio",
+    "rapidIteration": "Iteración rápida y despliegue con calidad y confiabilidad"
   }
 }

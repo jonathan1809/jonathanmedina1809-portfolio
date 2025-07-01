@@ -126,7 +126,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
         setExperienceData(data);
       } catch (err) {
         setError(
-          err instanceof Error ? err.message : "Failed to load experiences"
+          err instanceof Error ? err.message : t.common.failedToLoadExperiences
         );
       } finally {
         setLoading(false);
@@ -178,7 +178,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
             <div className="text-center py-12">
               <div className="inline-block animate-spin rounded-full h-10 w-10 border-b-2 border-blue-600"></div>
               <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg">
-                Loading experiences...
+                {t.common.loadingExperiences}
               </p>
             </div>
           )}
@@ -201,7 +201,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Unable to load experiences
+                {t.common.unableToLoadExperiences}
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4 max-w-md mx-auto">
                 {error}
@@ -223,7 +223,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
                   />
                 </svg>
-                Try again
+                {t.common.tryAgain}
               </button>
             </div>
           )}
@@ -281,7 +281,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                       {/* Technologies */}
                       <div className="space-y-3">
                         <h5 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide">
-                          Technologies & Tools
+                          {t.common.technologiesAndTools}
                         </h5>
                         <div className="flex flex-wrap gap-2">
                           {experience.technologies.map(
@@ -351,8 +351,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                     {t.experience.whatILearned.collaboration}
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Effective communication and teamwork across diverse teams
-                    and cultures
+                    {t.common.effectiveCommunication}
                   </p>
                 </div>
 
@@ -364,8 +363,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                     {t.experience.whatILearned.architecture}
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Building robust, scalable systems that grow with business
-                    needs
+                    {t.common.buildingRobustSystems}
                   </p>
                 </div>
 
@@ -377,7 +375,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                     {t.experience.whatILearned.delivery}
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Rapid iteration and deployment with quality and reliability
+                    {t.common.rapidIteration}
                   </p>
                 </div>
               </div>

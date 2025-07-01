@@ -185,10 +185,10 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className = "" }) => {
                     <span className="text-xl">🚀</span>
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                    Currently Exploring
+                    {t.common.currentlyExploring}
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    AI/ML Integration & Advanced Cloud Architecture
+                    {t.common.aiMlIntegration}
                   </p>
                 </div>
 
@@ -197,10 +197,10 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className = "" }) => {
                     <span className="text-xl">📚</span>
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                    Learning
+                    {t.common.learning}
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Advanced TypeScript Patterns & System Design
+                    {t.common.advancedTypescript}
                   </p>
                 </div>
 
@@ -209,10 +209,10 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className = "" }) => {
                     <span className="text-xl">🎯</span>
                   </div>
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                    Focus Areas
+                    {t.common.focusAreas}
                   </h4>
                   <p className="text-sm text-gray-600 dark:text-gray-400">
-                    Performance Optimization & Scalable Solutions
+                    {t.common.performanceOptimization}
                   </p>
                 </div>
               </div>

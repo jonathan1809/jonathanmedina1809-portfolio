@@ -46,10 +46,14 @@ export interface Translations {
     title: string;
     description: string;
     categories: {
-      frontend: string;
-      backend: string;
-      database: string;
+      languages: string;
+      frameworks: string;
       tools: string;
+      databases: string;
+      mobile: string;
+      architectures: string;
+      devops: string;
+      softSkills: string;
     };
     alwaysLearning: {
       title: string;
@@ -134,26 +138,37 @@ export interface Translations {
       ecommerce: {
         title: string;
         description: string;
+        features: string[];
       };
       saas: {
         title: string;
         description: string;
+        features: string[];
       };
       taskManagement: {
         title: string;
         description: string;
+        features: string[];
       };
       portfolio: {
         title: string;
         description: string;
+        features: string[];
       };
       apiGateway: {
         title: string;
         description: string;
+        features: string[];
       };
       mobileBackend: {
         title: string;
         description: string;
+        features: string[];
+      };
+      excursionesLola: {
+        title: string;
+        description: string;
+        features: string[];
       };
     };
   };
@@ -202,6 +217,30 @@ export interface Translations {
     quickLinks: string;
     getInTouch: string;
     copyright: string;
+    availableForWork: string;
+  };
+  common: {
+    loading: string;
+    error: string;
+    tryAgain: string;
+    dark: string;
+    light: string;
+    currentlyExploring: string;
+    learning: string;
+    focusAreas: string;
+    aiMlIntegration: string;
+    advancedTypescript: string;
+    performanceOptimization: string;
+    loadingExperiences: string;
+    unableToLoadExperiences: string;
+    failedToLoadExperiences: string;
+    loadingProjects: string;
+    unableToLoadProjects: string;
+    failedToLoadProjects: string;
+    technologiesAndTools: string;
+    effectiveCommunication: string;
+    buildingRobustSystems: string;
+    rapidIteration: string;
   };
 }
 
