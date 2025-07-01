@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useLanguage } from "@/lib/language-context";
 import { getTranslations } from "@/lib/translations";
-import { fetchProjects, Project } from "@/data/projects";
+import { useProjects } from "./useProjects";
 import Card from "@/components/atoms/Card";
 import Badge from "@/components/atoms/Badge";
 import Button from "@/components/atoms/Button";
@@ -17,40 +17,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 }) => {
   const { language } = useLanguage();
   const t = getTranslations(language);
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const loadProjects = async () => {
-      try {
-        setLoading(true);
-        const data = await fetchProjects();
-        setProjects(data);
-      } catch (err) {
-        setError(
-          err instanceof Error ? err.message : t.common.failedToLoadProjects
-        );
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadProjects();
-  }, []);
-
-  // Combine backend data with translations
-  const translatedProjects = projects.map((project) => {
-    const projectKey = project.title as keyof typeof t.projects.items;
-    const projectData = t.projects.items[projectKey];
-
-    return {
-      ...project,
-      title: projectData.title,
-      description: projectData.description,
-      features: projectData.features,
-    };
-  });
+  const { projects, loading, error, refetch } = useProjects();
 
   const getStatusBadge = (status: string) => {
     switch (status) {
@@ -156,7 +123,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
               {error}
             </p>
             <button
-              onClick={() => window.location.reload()}
+              onClick={refetch}
               className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
             >
               <svg
@@ -179,7 +146,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 
         {!loading && !error && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {translatedProjects.map((project) => (
+            {projects.map((project) => (
               <Card key={project.id} hover className="flex flex-col">
                 {/* Project Image */}
                 <div className="relative h-48 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-t-lg flex items-center justify-center">

@@ -1,157 +1,23 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Card from "@/components/atoms/Card";
 import Badge from "@/components/atoms/Badge";
 import { useLanguage } from "@/lib/language-context";
 import { getTranslations } from "@/lib/translations";
 import { motion } from "framer-motion";
-
-interface ExperienceData {
-  id: string;
-  technologies: string[];
-}
+import { useExperiences } from "./useExperiences";
 
 interface ExperienceSectionProps {
   className?: string;
 }
-
-// Mock data for experiences
-const experienceData: ExperienceData[] = [
-  {
-    id: "upwork",
-    technologies: [
-      "AWS Amplify Gen 2",
-      "Next.js",
-      "Zustand",
-      "React Hook Form",
-      "Radix UI",
-      "TypeScript",
-    ],
-  },
-  {
-    id: "tripPlanner",
-    technologies: [
-      ".NET Core",
-      "PostgreSQL",
-      "Next.js",
-      "React Native",
-      "Railway",
-      "Vercel",
-      "GitHub",
-    ],
-  },
-  {
-    id: "sesol",
-    technologies: [
-      "React 18",
-      "Redux Toolkit",
-      "NestJS",
-      "GraphQL",
-      "AWS",
-      "MUI",
-      "GitHub",
-    ],
-  },
-  {
-    id: "itjuana",
-    technologies: [
-      "React 18",
-      "Redux Toolkit",
-      ".NET Core",
-      "AWS",
-      "OpenAI",
-      "GitHub",
-      "LaunchDarkly",
-    ],
-  },
-  {
-    id: "3pillar",
-    technologies: [
-      "React 18",
-      "Redux Toolkit",
-      "NestJS",
-      "AWS",
-      "Tailwind",
-      "GitHub",
-      "Styled Components",
-    ],
-  },
-  {
-    id: "unosquare",
-    technologies: ["React", "Node.js", "TypeScript", "PostgreSQL"],
-  },
-  {
-    id: "frontrunner",
-    technologies: ["React", "JavaScript", "CSS3", "HTML5"],
-  },
-  {
-    id: "voyastic",
-    technologies: [
-      "Angular 4",
-      "JavaScript",
-      "ExpressJs",
-      "MySQL",
-      "HTML5",
-      "CSS3",
-    ],
-  },
-];
-
-// Mock API function for future backend integration
-const fetchExperiences = async (): Promise<ExperienceData[]> => {
-  // Simulate API delay
-  await new Promise((resolve) => setTimeout(resolve, 100));
-
-  // In the future, this would be a real API call
-  // return fetch('/api/experiences').then(res => res.json());
-
-  return experienceData;
-};
 
 const ExperienceSection: React.FC<ExperienceSectionProps> = ({
   className = "",
 }) => {
   const { language } = useLanguage();
   const t = getTranslations(language);
-  const [experienceData, setExperienceData] = useState<ExperienceData[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const loadExperiences = async () => {
-      try {
-        setLoading(true);
-        const data = await fetchExperiences();
-        setExperienceData(data);
-      } catch (err) {
-        setError(
-          err instanceof Error ? err.message : t.common.failedToLoadExperiences
-        );
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadExperiences();
-  }, []);
-
-  // Combine backend data with translations
-  const experiences = experienceData.map((data) => {
-    const positionKey = data.id as keyof typeof t.experience.positions;
-    const position = t.experience.positions[positionKey];
-
-    return {
-      id: data.id,
-      company: position.company,
-      position: position.position,
-      period: position.period,
-      location: position.location,
-      description: position.description,
-      technologies: data.technologies,
-      highlights: position.highlights,
-    };
-  });
+  const { experiences, loading, error, refetch } = useExperiences();
 
   return (
     <section
@@ -207,7 +73,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                 {error}
               </p>
               <button
-                onClick={() => window.location.reload()}
+                onClick={refetch}
                 className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
               >
                 <svg
