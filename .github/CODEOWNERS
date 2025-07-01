@@ -1,0 +1,46 @@
+# Global owners - these people will be the default owners for everything in
+# the repo. Unless a later match takes precedence, they will be requested for
+# review when someone opens a pull request.
+* @jonathan1809
+
+# Frontend components and features
+/src/components/ @jonathan1809
+/src/features/ @jonathan1809
+/src/app/ @jonathan1809
+
+# Configuration files
+/package.json @jonathan1809
+/next.config.ts @jonathan1809
+/tailwind.config.ts @jonathan1809
+/tsconfig.json @jonathan1809
+/.prettierrc @jonathan1809
+/.nvmrc @jonathan1809
+/vercel.json @jonathan1809
+
+# Documentation
+/README.md @jonathan1809
+/docs/ @jonathan1809
+
+# Internationalization
+/src/i18n/ @jonathan1809
+
+# API routes
+/src/app/api/ @jonathan1809
+
+# Data and services
+/src/data/ @jonathan1809
+/src/services/ @jonathan1809
+
+# Utilities and libraries
+/src/lib/ @jonathan1809
+/src/utils/ @jonathan1809
+
+# Styles
+/src/styles/ @jonathan1809
+/src/app/globals.css @jonathan1809
+
+# GitHub workflows and configuration
+/.github/ @jonathan1809
+
+# Environment and deployment
+/env.example @jonathan1809 
