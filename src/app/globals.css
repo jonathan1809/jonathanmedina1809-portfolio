@@ -1,6 +1,5 @@
 /* Devicon styles for technology icons */
-@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
-
+@import "devicon/devicon.min.css";
 @import "tailwindcss";
 
 :root {
