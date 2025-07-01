@@ -3,57 +3,105 @@
 import React from "react";
 import Card from "@/components/atoms/Card";
 import Icon from "@/components/atoms/Icon";
+import { motion } from "framer-motion";
+import { useLanguage } from "@/lib/language-context";
+import { getTranslations } from "@/lib/translations";
 
 interface SkillsSectionProps {
   className?: string;
 }
 
 const SkillsSection: React.FC<SkillsSectionProps> = ({ className = "" }) => {
+  const { language } = useLanguage();
+  const t = getTranslations(language);
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Languages",
       skills: [
-        { name: "React", icon: "react" },
-        { name: "Next.js", icon: "nextjs" },
-        { name: "TypeScript", icon: "typescript" },
         { name: "JavaScript", icon: "javascript" },
-        { name: "HTML5", icon: "html5" },
-        { name: "CSS3", icon: "css3" },
-        { name: "Tailwind CSS", icon: "tailwind" },
-        { name: "Sass", icon: "sass" },
+        { name: "TypeScript", icon: "typescript" },
+        { name: "C#", icon: "csharp" },
+        { name: "HTML", icon: "html5" },
+        { name: "CSS", icon: "css3" },
+        { name: "SQL", icon: "sql" },
       ],
     },
     {
-      title: "Backend",
+      title: "Frameworks & Libraries",
       skills: [
+        { name: "React 18", icon: "react" },
+        { name: "Next.js", icon: "nextjs" },
+        { name: "Redux Toolkit", icon: "redux" },
         { name: "Node.js", icon: "nodejs" },
         { name: "NestJS", icon: "nestjs" },
-        { name: "Express", icon: "express" },
-        { name: "Python", icon: "python" },
-        { name: "Java", icon: "java" },
-        { name: "Spring", icon: "spring" },
+        { name: "Express.js", icon: "express" },
+        { name: ".NET Core", icon: "dotnet" },
+        { name: "MUI", icon: "materialui" },
+        { name: "Tailwind CSS", icon: "tailwind" },
+        { name: "Styled Components", icon: "styledcomponents" },
+        { name: "Zustand", icon: "zustand" },
+        { name: "React Hook Form", icon: "reacthookform" },
+        { name: "TypeORM", icon: "typeorm" },
+        { name: "Sequelize", icon: "sequelize" },
+        { name: "Radix UI", icon: "radixui" },
       ],
     },
     {
-      title: "Database",
+      title: "Tools & Platforms",
+      skills: [
+        { name: "AWS", icon: "aws" },
+        { name: "Docker", icon: "docker" },
+        { name: "GitHub", icon: "github" },
+        { name: "GitHub Actions", icon: "githubactions" },
+        { name: "Railway", icon: "railway" },
+        { name: "Vercel", icon: "vercel" },
+        { name: "LaunchDarkly", icon: "launchdarkly" },
+        { name: "OpenAI API", icon: "openai" },
+      ],
+    },
+    {
+      title: "Databases",
       skills: [
         { name: "PostgreSQL", icon: "postgresql" },
         { name: "MongoDB", icon: "mongodb" },
         { name: "MySQL", icon: "mysql" },
-        { name: "Redis", icon: "redis" },
       ],
     },
     {
-      title: "Tools & Others",
+      title: "Mobile Development",
+      skills: [{ name: "React Native", icon: "react" }],
+    },
+    {
+      title: "Architectures & Best Practices",
       skills: [
-        { name: "Git", icon: "git" },
-        { name: "Docker", icon: "docker" },
-        { name: "AWS", icon: "aws" },
-        { name: "Firebase", icon: "firebase" },
-        { name: "Figma", icon: "figma" },
-        { name: "VS Code", icon: "vscode" },
-        { name: "Linux", icon: "linux" },
-        { name: "Ubuntu", icon: "ubuntu" },
+        { name: "RESTful APIs", icon: "api" },
+        { name: "GraphQL", icon: "graphql" },
+        { name: "Microservices", icon: "microservices" },
+        { name: "Clean Code", icon: "code" },
+        { name: "Atomic Design", icon: "design" },
+      ],
+    },
+    {
+      title: "DevOps & Testing",
+      skills: [
+        { name: "CI/CD Pipelines", icon: "cicd" },
+        { name: "Jest", icon: "jest" },
+        { name: "Cypress", icon: "cypress" },
+        { name: "React Testing Library", icon: "testinglibrary" },
+        { name: "Unit Testing", icon: "unittesting" },
+        { name: "Integration Testing", icon: "integrationtesting" },
+      ],
+    },
+    {
+      title: "Soft Skills",
+      skills: [
+        { name: "Effective Communication", icon: "communication" },
+        { name: "Leadership", icon: "leadership" },
+        { name: "Problem-solving", icon: "problemsolving" },
+        { name: "Team Management", icon: "teamwork" },
+        { name: "International Collaboration", icon: "collaboration" },
+        { name: "Mentorship", icon: "mentorship" },
+        { name: "Cross-functional Collaboration", icon: "crossfunctional" },
       ],
     },
   ];
@@ -66,63 +114,106 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className = "" }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Skills & Technologies
+            {t.skills.title}
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            I&apos;ve worked with a wide range of technologies throughout my
-            career. Here are the main tools and frameworks I use to build modern
-            web applications.
+            {t.skills.description}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           {skillCategories.map((category, index) => (
-            <Card key={index} hover className="text-center">
-              <div className="space-y-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  {category.title}
-                </h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div
-                      key={skillIndex}
-                      className="flex flex-col items-center space-y-2 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
-                    >
-                      <Icon
-                        name={skill.icon}
-                        size="lg"
-                        className="text-gray-700 dark:text-gray-300"
-                      />
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                        {skill.name}
-                      </span>
-                    </div>
-                  ))}
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: "easeOut",
+              }}
+            >
+              <Card hover className="text-center">
+                <div className="space-y-6">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    {category.title}
+                  </h3>
+                  <div className="grid grid-cols-2 gap-3">
+                    {category.skills.map((skill, skillIndex) => (
+                      <div
+                        key={skillIndex}
+                        className="flex flex-col items-center space-y-2 p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-200 group"
+                      >
+                        <Icon
+                          name={skill.icon}
+                          size="md"
+                          className="text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200"
+                        />
+                        <span className="text-xs font-medium text-gray-700 dark:text-gray-300 text-center leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                          {skill.name}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Additional Info */}
         <div className="mt-16 text-center">
-          <Card className="max-w-4xl mx-auto">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                Always Learning
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Technology evolves rapidly, and I believe in continuous
-                learning. I&apos;m always exploring new tools, frameworks, and
-                best practices to stay current and deliver the best solutions
-                for my clients.
-              </p>
-              <div className="flex justify-center space-x-4">
-                <div className="text-sm text-gray-500 dark:text-gray-400">
-                  🚀 Currently exploring: AI/ML Integration
+          <Card className="max-w-5xl mx-auto bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/10 dark:to-indigo-900/10">
+            <div className="space-y-6">
+              <div className="space-y-4">
+                <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
+                  {t.skills.alwaysLearning.title}
+                </h3>
+                <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                  {t.skills.alwaysLearning.description}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="group">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-3 group-hover:scale-110 transition-transform duration-200">
+                    <span className="text-xl">🚀</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    Currently Exploring
+                  </h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    AI/ML Integration & Advanced Cloud Architecture
+                  </p>
                 </div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">
-                  📚 Learning: Advanced TypeScript Patterns
+
+                <div className="group">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-full mb-3 group-hover:scale-110 transition-transform duration-200">
+                    <span className="text-xl">📚</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    Learning
+                  </h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Advanced TypeScript Patterns & System Design
+                  </p>
+                </div>
+
+                <div className="group">
+                  <div className="inline-flex items-center justify-center w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-full mb-3 group-hover:scale-110 transition-transform duration-200">
+                    <span className="text-xl">🎯</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    Focus Areas
+                  </h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    Performance Optimization & Scalable Solutions
+                  </p>
                 </div>
               </div>
             </div>
