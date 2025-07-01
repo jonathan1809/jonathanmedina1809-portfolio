@@ -1,0 +1,229 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Hola, soy Jonathan Medina",
+    "subtitle": "Desarrollador Full Stack",
+    "description": "Apasionado por crear aplicaciones limpias, escalables y fáciles de usar con tecnologías modernas. Me especializo en React, Next.js y Node.js con más de 6 años de experiencia.",
+    "cta": "Contáctame",
+    "viewProjects": "Ver Proyectos"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Soy un Desarrollador Full Stack con más de 6 años de experiencia construyendo aplicaciones web. Me especializo en React, Next.js y Node.js, con un enfoque en código limpio y arquitectura escalable.",
+    "journey": "Mi Trayectoria",
+    "journeyText1": "Comencé mi trayectoria como desarrollador hace más de 6 años, y desde entonces, he tenido el privilegio de trabajar en diversos proyectos en diferentes industrias. Mi experiencia abarca desde pequeñas startups hasta grandes empresas, dándome una perspectiva integral del desarrollo de software.",
+    "journeyText2": "He trabajado en proyectos internacionales, particularmente en Suecia, donde aprendí la importancia de la colaboración, comunicación y entrega de soluciones de alta calidad que cumplan tanto con los requisitos técnicos como comerciales.",
+    "coreTechnologies": "Tecnologías Principales",
+    "highlights": {
+      "experience": {
+        "title": "6+ años de experiencia",
+        "description": "Construyendo aplicaciones web con tecnologías modernas"
+      },
+      "international": {
+        "title": "Proyectos internacionales",
+        "description": "Trabajé en proyectos en Suecia y otros países"
+      },
+      "cleanCode": {
+        "title": "Defensor del código limpio",
+        "description": "Enfoque en arquitectura mantenible y escalable"
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "description": "He trabajado con una amplia gama de tecnologías a lo largo de mi carrera. Aquí están las principales herramientas y frameworks que uso para construir aplicaciones web modernas.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Base de Datos",
+      "tools": "Herramientas y Otros"
+    },
+    "alwaysLearning": {
+      "title": "Siempre Aprendiendo",
+      "description": "La tecnología evoluciona rápidamente, y creo en el aprendizaje continuo. Siempre estoy explorando nuevas herramientas, frameworks y mejores prácticas para mantenerme actualizado y entregar las mejores soluciones a mis clientes.",
+      "exploring": "Actualmente explorando: Integración de IA/ML",
+      "learning": "Aprendiendo: Patrones Avanzados de TypeScript"
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "description": "Mi trayectoria profesional me ha llevado a través de varias empresas y proyectos, cada uno contribuyendo a mi crecimiento como desarrollador y miembro del equipo.",
+    "present": "Presente",
+    "keyAchievements": "Logros Clave:",
+    "whatILearned": {
+      "title": "Lo Que He Aprendido",
+      "description": "A lo largo de mi carrera, he aprendido que el éxito en el desarrollo de software viene de una combinación de habilidades técnicas, comunicación efectiva y la capacidad de adaptarse a requisitos y tecnologías cambiantes.",
+      "collaboration": "Colaboración en Equipo",
+      "architecture": "Arquitectura Escalable",
+      "delivery": "Entrega Continua"
+    },
+    "positions": {
+      "sesol": {
+        "company": "Sesol AB",
+        "position": "Desarrollador Full Stack Senior",
+        "period": "2023 - Presente",
+        "location": "Estocolmo, Suecia",
+        "description": "Liderando el desarrollo de aplicaciones empresariales usando React, Next.js y Node.js. Implementando patrones de arquitectura limpia y mentorizando desarrolladores junior.",
+        "highlights": [
+          "Lideré un equipo de 5 desarrolladores en la construcción de un portal de clientes",
+          "Mejoré el rendimiento de la aplicación en un 40% mediante optimización",
+          "Implementé pipelines de CI/CD reduciendo el tiempo de despliegue en un 60%"
+        ]
+      },
+      "itjuana": {
+        "company": "ITjuana",
+        "position": "Desarrollador Full Stack",
+        "period": "2022 - 2023",
+        "location": "Remoto",
+        "description": "Desarrollé aplicaciones web para varios clientes usando frameworks modernos de JavaScript y servicios en la nube.",
+        "highlights": [
+          "Construí 10+ aplicaciones para clientes con 100% de satisfacción",
+          "Reduje el tiempo de desarrollo en un 30% mediante biblioteca de componentes",
+          "Implementé pruebas automatizadas logrando 90% de cobertura de código"
+        ]
+      },
+      "3pillar": {
+        "company": "3PillarGlobal",
+        "position": "Desarrollador de Software",
+        "period": "2021 - 2022",
+        "location": "Remoto",
+        "description": "Trabajé en múltiples proyectos para clientes empresariales, enfocándome en código escalable y mantenible.",
+        "highlights": [
+          "Desarrollé arquitectura de microservicios para plataforma de e-commerce",
+          "Colaboré con equipos internacionales en diferentes zonas horarias",
+          "Contribuí a proyectos de código abierto y herramientas internas"
+        ]
+      },
+      "upwork": {
+        "company": "Upwork",
+        "position": "Desarrollador Freelance",
+        "period": "2020 - 2021",
+        "location": "Remoto",
+        "description": "Proporcioné servicios de desarrollo a clientes de todo el mundo, especializándome en aplicaciones React y Node.js.",
+        "highlights": [
+          "Completé 50+ proyectos con calificación promedio de 5 estrellas",
+          "Me especialicé en aplicaciones de e-commerce y SaaS",
+          "Construí relaciones a largo plazo con clientes recurrentes"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "description": "Aquí están algunos de los proyectos en los que he trabajado. Cada uno representa diferentes desafíos y oportunidades de aprendizaje en mi trayectoria de desarrollo.",
+    "viewProject": "Ver Proyecto",
+    "viewCode": "Ver Código",
+    "featured": "Destacado",
+    "features": "Características",
+    "moreFeatures": "más características",
+    "status": {
+      "completed": "Completado",
+      "inProgress": "En Progreso",
+      "planned": "Planificado"
+    },
+    "categories": {
+      "web": "Web",
+      "mobile": "Móvil",
+      "fullstack": "Full Stack",
+      "backend": "Backend"
+    },
+    "cta": {
+      "title": "¿Quieres ver más?",
+      "description": "Siempre estoy trabajando en nuevos proyectos y aprendiendo nuevas tecnologías. No dudes en revisar mi GitHub para más ejemplos de código y proyectos en curso.",
+      "viewGitHub": "Ver GitHub",
+      "startProject": "Iniciar un Proyecto"
+    },
+    "items": {
+      "ecommerce": {
+        "title": "Plataforma de E-commerce",
+        "description": "Una solución de e-commerce full-stack construida con Next.js, con gestión de inventario en tiempo real, procesamiento de pagos y panel de administración."
+      },
+      "saas": {
+        "title": "Dashboard SaaS",
+        "description": "Un dashboard integral de gestión SaaS con análisis, gestión de usuarios y manejo de suscripciones."
+      },
+      "taskManagement": {
+        "title": "App de Gestión de Tareas",
+        "description": "Una aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real, colaboración en equipo y seguimiento de progreso."
+      },
+      "portfolio": {
+        "title": "Sitio Web de Portafolio",
+        "description": "Un sitio web de portafolio moderno construido con Next.js y Tailwind CSS, con modo oscuro y diseño responsivo."
+      },
+      "apiGateway": {
+        "title": "Puerta de Enlace API",
+        "description": "Una puerta de enlace API de microservicios construida con NestJS, con autenticación, limitación de velocidad y enrutamiento de solicitudes."
+      },
+      "mobileBackend": {
+        "title": "Backend de App Móvil",
+        "description": "Un backend escalable para aplicaciones móviles con notificaciones en tiempo real y sincronización de datos."
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Pensamientos sobre tecnología, desarrollo y las últimas tendencias en desarrollo web.",
+    "private": {
+      "title": "Blog Privado",
+      "description": "Esta sección del blog requiere autenticación para acceder. Escribo sobre temas técnicos, experiencias de desarrollo e insights de mi trabajo en varios proyectos.",
+      "topics": "Los temas incluyen:",
+      "comingSoon": "Próximamente"
+    },
+    "topics": [
+      "React & Next.js",
+      "Arquitectura",
+      "Mejores Prácticas",
+      "Rendimiento"
+    ]
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Trabajemos juntos en tu próximo proyecto. Siempre estoy interesado en escuchar sobre nuevas oportunidades y desafíos emocionantes.",
+    "form": {
+      "title": "Envíame un mensaje",
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "tu.correo@ejemplo.com",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto..."
+    },
+    "success": "¡Mensaje enviado exitosamente! Te responderé pronto.",
+    "error": "Error al enviar mensaje. Por favor intenta de nuevo.",
+    "info": {
+      "title": "Conectemos",
+      "description": "Siempre estoy abierto a discutir nuevos proyectos, ideas creativas u oportunidades para ser parte de tus visiones.",
+      "email": "📧 jonathangomez117@outlook.com",
+      "linkedin": "💼 Jonathan Medina Gomez",
+      "github": "🐙 github.com/jonathan1809",
+      "availability": "🌍 Disponible para trabajo remoto mundialmente"
+    },
+    "services": {
+      "title": "En qué puedo ayudarte:",
+      "items": [
+        "Desarrollo de aplicaciones web full-stack",
+        "Aplicaciones React y Next.js",
+        "Desarrollo e integración de APIs",
+        "Diseño y optimización de bases de datos",
+        "Revisión de código y consultoría técnica",
+        "Optimización de rendimiento"
+      ]
+    }
+  },
+  "footer": {
+    "description": "Desarrollador Full Stack apasionado por crear aplicaciones limpias, escalables y fáciles de usar.",
+    "quickLinks": "Enlaces Rápidos",
+    "getInTouch": "Contáctame",
+    "copyright": "© 2024 Jonathan Medina. Todos los derechos reservados."
+  }
+}

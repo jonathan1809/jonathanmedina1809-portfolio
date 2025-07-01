@@ -1,0 +1,229 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm Jonathan Medina",
+    "subtitle": "Full Stack Developer",
+    "description": "Passionate about creating clean, scalable, and user-friendly applications with modern technologies. I specialize in React, Next.js, and Node.js with over 6 years of experience.",
+    "cta": "Get in touch",
+    "viewProjects": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a Full Stack Developer with over 6 years of experience building web applications. I specialize in React, Next.js, and Node.js, with a focus on clean code and scalable architecture.",
+    "journey": "My Journey",
+    "journeyText1": "I started my journey as a developer over 6 years ago, and since then, I've had the privilege of working on diverse projects across different industries. My experience spans from small startups to large enterprises, giving me a well-rounded perspective on software development.",
+    "journeyText2": "I've worked on international projects, particularly in Sweden, where I learned the importance of collaboration, communication, and delivering high-quality solutions that meet both technical and business requirements.",
+    "coreTechnologies": "Core Technologies",
+    "highlights": {
+      "experience": {
+        "title": "6+ years of experience",
+        "description": "Building web applications with modern technologies"
+      },
+      "international": {
+        "title": "International projects",
+        "description": "Worked on projects in Sweden and other countries"
+      },
+      "cleanCode": {
+        "title": "Clean code advocate",
+        "description": "Focus on maintainable and scalable architecture"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "description": "I've worked with a wide range of technologies throughout my career. Here are the main tools and frameworks I use to build modern web applications.",
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Database",
+      "tools": "Tools & Others"
+    },
+    "alwaysLearning": {
+      "title": "Always Learning",
+      "description": "Technology evolves rapidly, and I believe in continuous learning. I'm always exploring new tools, frameworks, and best practices to stay current and deliver the best solutions for my clients.",
+      "exploring": "Currently exploring: AI/ML Integration",
+      "learning": "Learning: Advanced TypeScript Patterns"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "My professional journey has taken me through various companies and projects, each contributing to my growth as a developer and team member.",
+    "present": "Present",
+    "keyAchievements": "Key Achievements:",
+    "whatILearned": {
+      "title": "What I've Learned",
+      "description": "Throughout my career, I've learned that success in software development comes from a combination of technical skills, effective communication, and the ability to adapt to changing requirements and technologies.",
+      "collaboration": "Team Collaboration",
+      "architecture": "Scalable Architecture",
+      "delivery": "Continuous Delivery"
+    },
+    "positions": {
+      "sesol": {
+        "company": "Sesol AB",
+        "position": "Senior Full Stack Developer",
+        "period": "2023 - Present",
+        "location": "Stockholm, Sweden",
+        "description": "Leading development of enterprise applications using React, Next.js, and Node.js. Implementing clean architecture patterns and mentoring junior developers.",
+        "highlights": [
+          "Led a team of 5 developers in building a customer portal",
+          "Improved application performance by 40% through optimization",
+          "Implemented CI/CD pipelines reducing deployment time by 60%"
+        ]
+      },
+      "itjuana": {
+        "company": "ITjuana",
+        "position": "Full Stack Developer",
+        "period": "2022 - 2023",
+        "location": "Remote",
+        "description": "Developed web applications for various clients using modern JavaScript frameworks and cloud services.",
+        "highlights": [
+          "Built 10+ client applications with 100% client satisfaction",
+          "Reduced development time by 30% through component library",
+          "Implemented automated testing achieving 90% code coverage"
+        ]
+      },
+      "3pillar": {
+        "company": "3PillarGlobal",
+        "position": "Software Developer",
+        "period": "2021 - 2022",
+        "location": "Remote",
+        "description": "Worked on multiple projects for enterprise clients, focusing on scalable and maintainable code.",
+        "highlights": [
+          "Developed microservices architecture for e-commerce platform",
+          "Collaborated with international teams across different time zones",
+          "Contributed to open-source projects and internal tools"
+        ]
+      },
+      "upwork": {
+        "company": "Upwork",
+        "position": "Freelance Developer",
+        "period": "2020 - 2021",
+        "location": "Remote",
+        "description": "Provided development services to clients worldwide, specializing in React and Node.js applications.",
+        "highlights": [
+          "Completed 50+ projects with 5-star average rating",
+          "Specialized in e-commerce and SaaS applications",
+          "Built long-term relationships with recurring clients"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "description": "Here are some of the projects I've worked on. Each one represents different challenges and learning opportunities in my development journey.",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "featured": "Featured",
+    "features": "Features",
+    "moreFeatures": "more features",
+    "status": {
+      "completed": "Completed",
+      "inProgress": "In Progress",
+      "planned": "Planned"
+    },
+    "categories": {
+      "web": "Web",
+      "mobile": "Mobile",
+      "fullstack": "Full Stack",
+      "backend": "Backend"
+    },
+    "cta": {
+      "title": "Want to see more?",
+      "description": "I'm always working on new projects and learning new technologies. Feel free to check out my GitHub for more code examples and ongoing projects.",
+      "viewGitHub": "View GitHub",
+      "startProject": "Start a Project"
+    },
+    "items": {
+      "ecommerce": {
+        "title": "E-commerce Platform",
+        "description": "A full-stack e-commerce solution built with Next.js, featuring real-time inventory management, payment processing, and admin dashboard."
+      },
+      "saas": {
+        "title": "SaaS Dashboard",
+        "description": "A comprehensive SaaS management dashboard with analytics, user management, and subscription handling."
+      },
+      "taskManagement": {
+        "title": "Task Management App",
+        "description": "A collaborative task management application with real-time updates, team collaboration, and progress tracking."
+      },
+      "portfolio": {
+        "title": "Portfolio Website",
+        "description": "A modern portfolio website built with Next.js and Tailwind CSS, featuring dark mode and responsive design."
+      },
+      "apiGateway": {
+        "title": "API Gateway",
+        "description": "A microservices API gateway built with NestJS, featuring authentication, rate limiting, and request routing."
+      },
+      "mobileBackend": {
+        "title": "Mobile App Backend",
+        "description": "A scalable backend for mobile applications with real-time notifications and data synchronization."
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts on technology, development, and the latest trends in web development.",
+    "private": {
+      "title": "Private Blog",
+      "description": "This blog section requires authentication to access. I write about technical topics, development experiences, and insights from my work on various projects.",
+      "topics": "Topics include:",
+      "comingSoon": "Coming Soon"
+    },
+    "topics": [
+      "React & Next.js",
+      "Architecture",
+      "Best Practices",
+      "Performance"
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together on your next project. I'm always interested in hearing about new opportunities and exciting challenges.",
+    "form": {
+      "title": "Send me a message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your.email@example.com",
+      "messagePlaceholder": "Tell me about your project..."
+    },
+    "success": "Message sent successfully! I'll get back to you soon.",
+    "error": "Error sending message. Please try again.",
+    "info": {
+      "title": "Let's connect",
+      "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+      "email": "📧 jonathangomez117@outlook.com",
+      "linkedin": "💼 Jonathan Medina Gomez",
+      "github": "🐙 github.com/jonathan1809",
+      "availability": "🌍 Available for remote work worldwide"
+    },
+    "services": {
+      "title": "What I can help you with:",
+      "items": [
+        "Full-stack web application development",
+        "React and Next.js applications",
+        "API development and integration",
+        "Database design and optimization",
+        "Code review and technical consulting",
+        "Performance optimization"
+      ]
+    }
+  },
+  "footer": {
+    "description": "Full Stack Developer passionate about creating clean, scalable, and user-friendly applications.",
+    "quickLinks": "Quick Links",
+    "getInTouch": "Get in Touch",
+    "copyright": "© 2024 Jonathan Medina. All rights reserved."
+  }
+}
