@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { LinkedInIcon, GitHubIcon, EmailIcon } from "@/components";
 
 interface FooterProps {
   className?: string;
@@ -13,17 +14,17 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/jonathanmedinagomez/",
-      icon: "💼",
+      icon: <LinkedInIcon className="text-gray-400 hover:text-blue-400" />,
     },
     {
       name: "GitHub",
       url: "https://github.com/jonathan1809",
-      icon: "🐙",
+      icon: <GitHubIcon className="text-gray-400 hover:text-blue-400" />,
     },
     {
       name: "Email",
       url: "mailto:jonathangomez117@outlook.com",
-      icon: "✉️",
+      icon: <EmailIcon className="text-gray-400 hover:text-blue-400" />,
     },
   ];
 
@@ -114,10 +115,10 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+                  className="transition-colors duration-200"
                   title={link.name}
                 >
-                  <span className="text-lg">{link.icon}</span>
+                  {link.icon}
                 </a>
               ))}
             </div>

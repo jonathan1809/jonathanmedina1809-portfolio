@@ -3,6 +3,7 @@
 import React from "react";
 import { useLanguage } from "@/lib/language-context";
 import Button from "@/components/atoms/Button";
+import { LinkedInIcon, GitHubIcon, EmailIcon } from "@/components";
 
 interface HeroProps {
   className?: string;
@@ -15,17 +16,23 @@ const Hero: React.FC<HeroProps> = ({ className = "" }) => {
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/jonathanmedinagomez/",
-      icon: "💼",
+      icon: (
+        <LinkedInIcon className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400" />
+      ),
     },
     {
       name: "GitHub",
       url: "https://github.com/jonathan1809",
-      icon: "🐙",
+      icon: (
+        <GitHubIcon className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400" />
+      ),
     },
     {
       name: "Email",
       url: "mailto:jonathangomez117@outlook.com",
-      icon: "✉️",
+      icon: (
+        <EmailIcon className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400" />
+      ),
     },
   ];
 
@@ -68,7 +75,7 @@ const Hero: React.FC<HeroProps> = ({ className = "" }) => {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-2xl hover:scale-110 transition-transform duration-200"
+                  className="hover:scale-110 transition-transform duration-200"
                   title={link.name}
                 >
                   {link.icon}
