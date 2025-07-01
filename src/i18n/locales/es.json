@@ -41,10 +41,14 @@
     "title": "Habilidades y Tecnologías",
     "description": "He trabajado con una amplia gama de tecnologías a lo largo de mi carrera. Aquí están las principales herramientas y frameworks que uso para construir aplicaciones web modernas.",
     "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "database": "Base de Datos",
-      "tools": "Herramientas y Otros"
+      "languages": "Lenguajes",
+      "frameworks": "Frameworks y Librerías",
+      "tools": "Herramientas y Plataformas",
+      "databases": "Bases de Datos",
+      "mobile": "Desarrollo Móvil",
+      "architectures": "Arquitecturas y Mejores Prácticas",
+      "devops": "DevOps y Testing",
+      "softSkills": "Habilidades Blandas"
     },
     "alwaysLearning": {
       "title": "Siempre Aprendiendo",
@@ -66,52 +70,109 @@
       "delivery": "Entrega Continua"
     },
     "positions": {
+      "upwork": {
+        "company": "Proyectos Independientes | Remoto - Freelance",
+        "position": "Ingeniero de Software",
+        "period": "Abril 2025 - Presente",
+        "location": "Agencia Inmobiliaria Española (Proyecto Upwork)",
+        "description": "Contrato freelance vía Upwork para una agencia inmobiliaria española que gestiona alquileres vacacionales de corta duración. Construyendo un sistema para centralizar listados de propiedades, gestionar propietarios/agentes y automatizar procesos de facturación.",
+        "highlights": [
+          "Construyendo toda la solución usando AWS Amplify Gen 2 y Next.js, enfocándome en desarrollo y arquitectura de sistema end-to-end",
+          "Diseñando modelos de datos relacionales complejos con tablas de unión y campos JSON para manejar múltiples comisiones de agentes por propiedad",
+          "Desarrollando un asistente de registro de propiedades multi-paso: crear/seleccionar propietario → asignar agentes → ingresar datos de contrato y costos",
+          "Gestioné estados de formularios profundamente anidados usando React Hook Form y Zustand; colaboré con el Product Owner para discusiones de lógica de negocio"
+        ]
+      },
+      "tripPlanner": {
+        "company": "Proyectos Independientes | Remoto - Freelance",
+        "position": "Ingeniero de Software",
+        "period": "Abril 2025 - Presente",
+        "location": "Proyecto Plataforma de Planificación de Viajes",
+        "description": "Desarrollador único para una plataforma completa de reservas de viajes enfocada en diseño e implementación de sistema end-to-end.",
+        "highlights": [
+          "Diseñé y desarrollé la arquitectura completa para un sistema de reservas de viajes escalable desde cero",
+          "Analicé requisitos de negocio y creé modelos de datos normalizados usando PostgreSQL; construí servicios backend usando .NET Core",
+          "Desarrollé un frontend responsivo y optimizado para SEO usando Next.js, entregando una experiencia de usuario fluida en todos los dispositivos",
+          "Creé aplicaciones móviles nativas usando Kotlin (Android) y Swift (iOS) para rendimiento consistente multiplataforma",
+          "Implementé y gestioné pipelines de CI/CD, desplegando servicios backend vía Railway y aplicaciones frontend vía Vercel"
+        ]
+      },
       "sesol": {
         "company": "Sesol AB",
-        "position": "Desarrollador Full Stack Senior",
-        "period": "2023 - Presente",
-        "location": "Estocolmo, Suecia",
-        "description": "Liderando el desarrollo de aplicaciones empresariales usando React, Next.js y Node.js. Implementando patrones de arquitectura limpia y mentorizando desarrolladores junior.",
+        "position": "Ingeniero de Software Senior",
+        "period": "Nov 2023 - Abr 2025",
+        "location": "Jönköping, Suecia",
+        "description": "Liderando la arquitectura frontend y desarrollo de una plataforma moderna de cotizaciones usando React 18, Redux Toolkit y Material UI (MUI).",
         "highlights": [
-          "Lideré un equipo de 5 desarrolladores en la construcción de un portal de clientes",
-          "Mejoré el rendimiento de la aplicación en un 40% mediante optimización",
-          "Implementé pipelines de CI/CD reduciendo el tiempo de despliegue en un 60%"
+          "Mejoré la experiencia del usuario reduciendo el tiempo de cálculo de cotizaciones de 5 minutos a respuesta en tiempo real",
+          "Migré un sistema de cotizaciones basado en WordPress legacy a una arquitectura de microservicios escalable usando NestJS y Arquitectura Hexagonal",
+          "Diseñé, desarrollé y desplegué una aplicación basada en GraphQL usando NestJS y React 18 para rastrear y visualizar datos del mercado energético en tiempo real",
+          "Implementé metodología Atomic Design para reestructurar la arquitectura frontend, permitiendo desarrollo UI escalable",
+          "Colaboré con el equipo de ciberseguridad para implementar mejores prácticas de codificación segura e integrar medidas de ciberseguridad"
         ]
       },
       "itjuana": {
-        "company": "ITjuana",
-        "position": "Desarrollador Full Stack",
-        "period": "2022 - 2023",
-        "location": "Remoto",
-        "description": "Desarrollé aplicaciones web para varios clientes usando frameworks modernos de JavaScript y servicios en la nube.",
+        "company": "ITjuana (Bio-Rad)",
+        "position": "Ingeniero de Software",
+        "period": "Nov 2022 - Sep 2023",
+        "location": "México",
+        "description": "Rediseñé la UX/UI de una aplicación de salud orientada al cliente, aplicando mejores prácticas de accesibilidad y patrones de diseño intuitivos.",
         "highlights": [
-          "Construí 10+ aplicaciones para clientes con 100% de satisfacción",
-          "Reduje el tiempo de desarrollo en un 30% mediante biblioteca de componentes",
-          "Implementé pruebas automatizadas logrando 90% de cobertura de código"
+          "Logré una reducción del 10% en errores de usuario y mejoré la usabilidad general a través de mejor diseño UX/UI",
+          "Implementé soporte multilingüe usando feature flags de LaunchDarkly, permitiendo despliegue fluido de características localizadas",
+          "Lideré un equipo multifuncional de 2 desarrolladores y 2 ingenieros QA, gestionando efectivamente la planificación de sprints y ciclos de desarrollo",
+          "Colaboré estrechamente con el Product Owner para refinar requisitos, desglosar épicas y definir historias de usuario claras",
+          "Integré la API de OpenAI en servicios construidos con Go y .NET Core, desarrollando un bot conversacional inteligente"
         ]
       },
       "3pillar": {
-        "company": "3PillarGlobal",
-        "position": "Desarrollador de Software",
-        "period": "2021 - 2022",
-        "location": "Remoto",
-        "description": "Trabajé en múltiples proyectos para clientes empresariales, enfocándome en código escalable y mantenible.",
+        "company": "3PillarGlobal (Exact Payments)",
+        "position": "Ingeniero de Software",
+        "period": "Jun 2021 - Nov 2022",
+        "location": "México",
+        "description": "Construí un sistema de incorporación de clientes con formularios multi-paso usando React, Styled Components y React Hook Form.",
         "highlights": [
-          "Desarrollé arquitectura de microservicios para plataforma de e-commerce",
-          "Colaboré con equipos internacionales en diferentes zonas horarias",
-          "Contribuí a proyectos de código abierto y herramientas internas"
+          "Entregué una experiencia de usuario intuitiva y responsiva que optimizó el registro de clientes",
+          "Desarrollé un microservicio dedicado para gestión de plantillas de email e integré AWS SNS para automatizar notificaciones por email",
+          "Diseñé e implementé una capa middleware para gestionar la exposición de rutas vía API Gateway",
+          "Mejoré la calidad del código aumentando la cobertura de pruebas al 80% e incorporando pruebas de integración",
+          "Contribuí a la escalabilidad y mantenibilidad del sistema a través de decisiones arquitectónicas estratégicas"
         ]
       },
-      "upwork": {
-        "company": "Upwork",
-        "position": "Desarrollador Freelance",
-        "period": "2020 - 2021",
-        "location": "Remoto",
-        "description": "Proporcioné servicios de desarrollo a clientes de todo el mundo, especializándome en aplicaciones React y Node.js.",
+      "unosquare": {
+        "company": "Unosquare",
+        "position": "Ingeniero de Software",
+        "period": "Abr 2019 - Abr 2021",
+        "location": "Oregón",
+        "description": "Desarrollé aplicaciones web y soluciones de software usando tecnologías modernas y mejores prácticas.",
         "highlights": [
-          "Completé 50+ proyectos con calificación promedio de 5 estrellas",
-          "Me especialicé en aplicaciones de e-commerce y SaaS",
-          "Construí relaciones a largo plazo con clientes recurrentes"
+          "Trabajé en múltiples proyectos de clientes entregando soluciones de software de alta calidad",
+          "Colaboré con equipos multifuncionales para implementar nuevas características y mejoras",
+          "Mantuve y mejoré aplicaciones existentes asegurando rendimiento óptimo"
+        ]
+      },
+      "frontrunner": {
+        "company": "FrontRunner Technologies S.A. de C.V.",
+        "position": "Desarrollador React",
+        "period": "Oct 2018 - Ene 2019",
+        "location": "México",
+        "description": "Posición de contrato enfocada en desarrollo React e implementación frontend.",
+        "highlights": [
+          "Desarrollé componentes React e interfaces de usuario",
+          "Colaboré con el equipo de desarrollo en requisitos del proyecto",
+          "Implementé diseño responsivo y mejoras en la experiencia de usuario"
+        ]
+      },
+      "voyastic": {
+        "company": "Voyastic",
+        "position": "Desarrollador Full Stack",
+        "period": "Ago 2017 - May 2018",
+        "location": "Aguascalientes, México",
+        "description": "Rol de desarrollo full stack trabajando con varias tecnologías y frameworks web.",
+        "highlights": [
+          "Desarrollé aplicaciones web full stack usando tecnologías modernas",
+          "Trabajé en diseño y optimización de bases de datos",
+          "Implementé diseños web responsivos e interfaces de usuario"
         ]
       }
     }

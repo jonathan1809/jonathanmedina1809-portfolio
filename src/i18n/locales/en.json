@@ -41,10 +41,14 @@
     "title": "Skills & Technologies",
     "description": "I've worked with a wide range of technologies throughout my career. Here are the main tools and frameworks I use to build modern web applications.",
     "categories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "database": "Database",
-      "tools": "Tools & Others"
+      "languages": "Languages",
+      "frameworks": "Frameworks & Libraries",
+      "tools": "Tools & Platforms",
+      "databases": "Databases",
+      "mobile": "Mobile Development",
+      "architectures": "Architectures & Best Practices",
+      "devops": "DevOps & Testing",
+      "softSkills": "Soft Skills"
     },
     "alwaysLearning": {
       "title": "Always Learning",
@@ -66,52 +70,109 @@
       "delivery": "Continuous Delivery"
     },
     "positions": {
+      "upwork": {
+        "company": "Independent Projects | Remote - Freelance",
+        "position": "Software Engineer",
+        "period": "April 2025 - Present",
+        "location": "Spanish Real Estate Agency (Upwork Project)",
+        "description": "Freelance engagement via Upwork for a Spanish real estate agency managing short-term holiday rentals. Building a system to centralize property listings, manage owners/agents, and automate invoicing processes.",
+        "highlights": [
+          "Building the entire solution using AWS Amplify Gen 2 and Next.js, focusing on end-to-end system development and architecture",
+          "Designing complex relational data models with join tables and JSON fields for handling multiple agent commissions per property",
+          "Developing a multi-step property registration wizard: create/select owner → assign agents → enter contract and cost data",
+          "Managed deeply nested form states using React Hook Form and Zustand; collaborated with Product Owner for business logic discussions"
+        ]
+      },
+      "tripPlanner": {
+        "company": "Independent Projects | Remote - Freelance",
+        "position": "Software Engineer",
+        "period": "April 2025 - Present",
+        "location": "Trip Planner Platform Project",
+        "description": "Solo developer for a full-fledged travel booking platform focused on end-to-end system design and implementation.",
+        "highlights": [
+          "Designed and developed the complete architecture for a scalable travel booking system from the ground up",
+          "Analyzed business requirements and created normalized data models using PostgreSQL; built backend services using .NET Core",
+          "Developed a responsive and SEO-optimized frontend using Next.js, delivering a seamless user experience across devices",
+          "Created native mobile apps using Kotlin (Android) and Swift (iOS) for consistent cross-platform performance",
+          "Implemented and managed CI/CD pipelines, deploying backend services via Railway and frontend apps via Vercel"
+        ]
+      },
       "sesol": {
         "company": "Sesol AB",
-        "position": "Senior Full Stack Developer",
-        "period": "2023 - Present",
-        "location": "Stockholm, Sweden",
-        "description": "Leading development of enterprise applications using React, Next.js, and Node.js. Implementing clean architecture patterns and mentoring junior developers.",
+        "position": "Senior Software Engineer",
+        "period": "Nov 2023 - Apr 2025",
+        "location": "Jönköping, Sweden",
+        "description": "Leading the frontend architecture and development of a modern quotation platform using React 18, Redux Toolkit, and Material UI (MUI).",
         "highlights": [
-          "Led a team of 5 developers in building a customer portal",
-          "Improved application performance by 40% through optimization",
-          "Implemented CI/CD pipelines reducing deployment time by 60%"
+          "Enhanced user experience by reducing quote calculation time from 5 minutes to real-time responsiveness",
+          "Migrated a legacy WordPress-based quoting system to a scalable microservices architecture using NestJS and Hexagonal Architecture",
+          "Designed, developed, and deployed a GraphQL-based application leveraging NestJS and React 18 to track and visualize real-time energy market data",
+          "Implemented Atomic Design methodology to restructure the frontend architecture, enabling scalable UI development",
+          "Collaborated with cybersecurity team to implement secure coding best practices and integrate cybersecurity measures"
         ]
       },
       "itjuana": {
-        "company": "ITjuana",
-        "position": "Full Stack Developer",
-        "period": "2022 - 2023",
-        "location": "Remote",
-        "description": "Developed web applications for various clients using modern JavaScript frameworks and cloud services.",
+        "company": "ITjuana (Bio-Rad)",
+        "position": "Software Engineer",
+        "period": "Nov 2022 - Sep 2023",
+        "location": "Mexico",
+        "description": "Redesigned the UX/UI of a customer-facing healthcare application, applying accessibility best practices and intuitive design patterns.",
         "highlights": [
-          "Built 10+ client applications with 100% client satisfaction",
-          "Reduced development time by 30% through component library",
-          "Implemented automated testing achieving 90% code coverage"
+          "Led to a 10% reduction in user errors and improved overall usability through better UX/UI design",
+          "Implemented multilingual support using LaunchDarkly feature flags, enabling seamless rollout of localized features",
+          "Led a cross-functional team of 2 developers and 2 QA engineers, effectively managing sprint planning and development cycles",
+          "Collaborated closely with the Product Owner to refine requirements, break down epics, and define clear user stories",
+          "Integrated OpenAI's API into services built with Go and .NET Core, developing a smart conversational bot"
         ]
       },
       "3pillar": {
-        "company": "3PillarGlobal",
-        "position": "Software Developer",
-        "period": "2021 - 2022",
-        "location": "Remote",
-        "description": "Worked on multiple projects for enterprise clients, focusing on scalable and maintainable code.",
+        "company": "3PillarGlobal (Exact Payments)",
+        "position": "Software Engineer",
+        "period": "Jun 2021 - Nov 2022",
+        "location": "Mexico",
+        "description": "Built a customer onboarding system featuring multi-step forms using React, Styled Components, and React Hook Form.",
         "highlights": [
-          "Developed microservices architecture for e-commerce platform",
-          "Collaborated with international teams across different time zones",
-          "Contributed to open-source projects and internal tools"
+          "Delivered an intuitive and responsive user experience that streamlined customer registration",
+          "Developed a dedicated microservice for email template management and integrated AWS SNS to automate email notifications",
+          "Designed and implemented a middleware layer to manage route exposure via API Gateway",
+          "Enhanced code quality by increasing test coverage to 80% and incorporating integration testing",
+          "Contributed to the system's scalability and maintainability through strategic architectural decisions"
         ]
       },
-      "upwork": {
-        "company": "Upwork",
-        "position": "Freelance Developer",
-        "period": "2020 - 2021",
-        "location": "Remote",
-        "description": "Provided development services to clients worldwide, specializing in React and Node.js applications.",
+      "unosquare": {
+        "company": "Unosquare",
+        "position": "Software Engineer",
+        "period": "Apr 2019 - Apr 2021",
+        "location": "Oregon",
+        "description": "Developed web applications and software solutions using modern technologies and best practices.",
         "highlights": [
-          "Completed 50+ projects with 5-star average rating",
-          "Specialized in e-commerce and SaaS applications",
-          "Built long-term relationships with recurring clients"
+          "Worked on multiple client projects delivering high-quality software solutions",
+          "Collaborated with cross-functional teams to implement new features and improvements",
+          "Maintained and enhanced existing applications ensuring optimal performance"
+        ]
+      },
+      "frontrunner": {
+        "company": "FrontRunner Technologies S.A. de C.V.",
+        "position": "React Developer",
+        "period": "Oct 2018 - Jan 2019",
+        "location": "Mexico",
+        "description": "Contract position focused on React development and frontend implementation.",
+        "highlights": [
+          "Developed React components and user interfaces",
+          "Collaborated with development team on project requirements",
+          "Implemented responsive design and user experience improvements"
+        ]
+      },
+      "voyastic": {
+        "company": "Voyastic",
+        "position": "Full Stack Developer",
+        "period": "Aug 2017 - May 2018",
+        "location": "Aguascalientes, México",
+        "description": "Full stack development role working with various web technologies and frameworks.",
+        "highlights": [
+          "Developed full-stack web applications using modern technologies",
+          "Worked on database design and optimization",
+          "Implemented responsive web designs and user interfaces"
         ]
       }
     }
