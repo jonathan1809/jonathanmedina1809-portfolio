@@ -12,7 +12,6 @@ export { default as StatsIcon } from "./atoms/StatsIcon";
 
 // Molecules
 export { default as Navigation } from "./molecules/Navigation";
-export { default as CvDownloadButton } from "./molecules/CvDownloadButton";
 export { default as StatsDisplay } from "./molecules/StatsDisplay";
 
 // Organisms

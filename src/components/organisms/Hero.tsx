@@ -8,7 +8,6 @@ import {
   LinkedInIcon,
   GitHubIcon,
   EmailIcon,
-  CvDownloadButton,
   StatsDisplay,
 } from "@/components";
 
@@ -78,7 +77,6 @@ const Hero: React.FC<HeroProps> = ({ className = "" }) => {
               >
                 {translations.hero.viewProjects}
               </Link>
-              <CvDownloadButton />
             </div>
 
             {/* Stats Display */}

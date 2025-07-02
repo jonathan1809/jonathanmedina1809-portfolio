@@ -19,8 +19,6 @@ export interface Translations {
     description: string;
     cta: string;
     viewProjects: string;
-    downloadCV: string;
-    downloading: string;
   };
   about: {
     title: string;
@@ -189,11 +187,15 @@ export interface Translations {
     title: string;
     description: string;
     form: {
+      title: string;
       name: string;
       email: string;
       message: string;
       send: string;
       sending: string;
+      namePlaceholder: string;
+      emailPlaceholder: string;
+      messagePlaceholder: string;
       success: string;
       error: string;
     };
@@ -245,7 +247,6 @@ export interface Translations {
   stats: {
     loading: string;
     visits: string;
-    cvDownloads: string;
   };
 }
 

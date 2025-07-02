@@ -3,14 +3,10 @@ import { redis } from "@/lib/redis";
 
 export async function GET() {
   try {
-    const [pageViews, cvDownloads] = await Promise.all([
-      redis.get("page_views"),
-      redis.get("cv_downloads"),
-    ]);
+    const pageViews = await redis.get("page_views");
 
     return NextResponse.json({
       pageViews: pageViews || 0,
-      cvDownloads: cvDownloads || 0,
     });
   } catch (error) {
     console.error("Error fetching stats:", error);
@@ -38,11 +34,6 @@ export async function POST(request: NextRequest) {
         const currentViews = ((await redis.get("page_views")) as number) || 0;
         await redis.set("page_views", currentViews + 1);
       }
-    } else if (type === "cv_download") {
-      // For CV downloads, we count every download (no session restriction)
-      const currentDownloads =
-        ((await redis.get("cv_downloads")) as number) || 0;
-      await redis.set("cv_downloads", currentDownloads + 1);
     }
 
     return NextResponse.json({ success: true });

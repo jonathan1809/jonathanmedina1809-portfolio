@@ -23,23 +23,12 @@ const StatsDisplay: React.FC<StatsDisplayProps> = ({ className = "" }) => {
 
   return (
     <div
-      className={`flex space-x-6 text-sm text-gray-600 dark:text-gray-400 ${className}`}
+      className={`flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 ${className}`}
     >
-      <div className="flex items-center space-x-2">
-        <StatsIcon type="visits" className="text-blue-600 dark:text-blue-400" />
-        <span>
-          {stats.pageViews.toLocaleString()} {translations.stats.visits}
-        </span>
-      </div>
-      <div className="flex items-center space-x-2">
-        <StatsIcon
-          type="downloads"
-          className="text-green-600 dark:text-green-400"
-        />
-        <span>
-          {stats.cvDownloads.toLocaleString()} {translations.stats.cvDownloads}
-        </span>
-      </div>
+      <StatsIcon type="visits" className="text-blue-600 dark:text-blue-400" />
+      <span>
+        {stats.pageViews.toLocaleString()} {translations.stats.visits}
+      </span>
     </div>
   );
 };

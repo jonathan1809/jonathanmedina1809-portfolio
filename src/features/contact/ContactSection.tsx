@@ -48,7 +48,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ className = "" }) => {
             {translations.contact.title}
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            {translations.contact.subtitle}
+            {translations.contact.description}
           </p>
         </div>
 

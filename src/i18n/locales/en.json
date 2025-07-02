@@ -13,9 +13,7 @@
     "subtitle": "Full Stack Developer",
     "description": "Passionate about creating clean, scalable, and user-friendly applications with modern technologies. I specialize in React, Next.js, and Node.js with over 6 years of experience.",
     "cta": "Get in touch",
-    "viewProjects": "View Projects",
-    "downloadCV": "Download CV",
-    "downloading": "Downloading..."
+    "viewProjects": "View Projects"
   },
   "about": {
     "title": "About Me",
@@ -326,11 +324,15 @@
     "title": "Get In Touch",
     "description": "I'm always interested in hearing about new opportunities and exciting projects. Feel free to reach out if you'd like to discuss potential collaborations or just want to say hello.",
     "form": {
+      "title": "Send me a message",
       "name": "Name",
       "email": "Email",
       "message": "Message",
       "send": "Send Message",
       "sending": "Sending...",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your.email@example.com",
+      "messagePlaceholder": "Tell me about your project...",
       "success": "Message sent successfully!",
       "error": "Error sending message. Please try again."
     },
@@ -388,7 +390,6 @@
   },
   "stats": {
     "loading": "Loading statistics...",
-    "visits": "visits",
-    "cvDownloads": "CV downloads"
+    "visits": "visits"
   }
 }

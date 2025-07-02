@@ -13,9 +13,7 @@
     "subtitle": "Desarrollador Full Stack",
     "description": "Apasionado por crear aplicaciones limpias, escalables y fáciles de usar con tecnologías modernas. Me especializo en React, Next.js y Node.js con más de 6 años de experiencia.",
     "cta": "Contáctame",
-    "viewProjects": "Ver Proyectos",
-    "downloadCV": "Descargar CV",
-    "downloading": "Descargando..."
+    "viewProjects": "Ver Proyectos"
   },
   "about": {
     "title": "Sobre Mí",
@@ -326,11 +324,15 @@
     "title": "Contáctame",
     "description": "Siempre estoy interesado en escuchar sobre nuevas oportunidades y proyectos emocionantes. No dudes en contactarme si te gustaría discutir posibles colaboraciones o simplemente quieres saludar.",
     "form": {
+      "title": "Envíame un mensaje",
       "name": "Nombre",
       "email": "Email",
       "message": "Mensaje",
       "send": "Enviar Mensaje",
       "sending": "Enviando...",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "tu.correo@ejemplo.com",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
       "success": "¡Mensaje enviado exitosamente!",
       "error": "Error al enviar mensaje. Por favor intenta de nuevo."
     },
@@ -388,7 +390,6 @@
   },
   "stats": {
     "loading": "Cargando estadísticas...",
-    "visits": "visitas",
-    "cvDownloads": "descargas CV"
+    "visits": "visitas"
   }
 }
