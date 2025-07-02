@@ -13,7 +13,9 @@
     "subtitle": "Full Stack Developer",
     "description": "Passionate about creating clean, scalable, and user-friendly applications with modern technologies. I specialize in React, Next.js, and Node.js with over 6 years of experience.",
     "cta": "Get in touch",
-    "viewProjects": "View Projects"
+    "viewProjects": "View Projects",
+    "downloadCV": "Download CV",
+    "downloading": "Downloading..."
   },
   "about": {
     "title": "About Me",
@@ -322,17 +324,15 @@
   },
   "contact": {
     "title": "Get In Touch",
-    "subtitle": "Let's work together on your next project. I'm always interested in hearing about new opportunities and exciting challenges.",
+    "description": "I'm always interested in hearing about new opportunities and exciting projects. Feel free to reach out if you'd like to discuss potential collaborations or just want to say hello.",
     "form": {
-      "title": "Send me a message",
       "name": "Name",
       "email": "Email",
       "message": "Message",
       "send": "Send Message",
       "sending": "Sending...",
-      "namePlaceholder": "Your name",
-      "emailPlaceholder": "your.email@example.com",
-      "messagePlaceholder": "Tell me about your project..."
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again."
     },
     "success": "Message sent successfully! I'll get back to you soon.",
     "error": "Error sending message. Please try again.",
@@ -385,5 +385,10 @@
     "effectiveCommunication": "Effective communication and teamwork across diverse teams and cultures",
     "buildingRobustSystems": "Building robust, scalable systems that grow with business needs",
     "rapidIteration": "Rapid iteration and deployment with quality and reliability"
+  },
+  "stats": {
+    "loading": "Loading statistics...",
+    "visits": "visits",
+    "cvDownloads": "CV downloads"
   }
 }

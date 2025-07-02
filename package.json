@@ -26,6 +26,7 @@
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^15.3.4",
     "@prisma/client": "^5.10.2",
+    "@upstash/redis": "^1.35.1",
     "bcryptjs": "^2.4.3",
     "clsx": "^2.1.1",
     "devicon": "^2.16.0",

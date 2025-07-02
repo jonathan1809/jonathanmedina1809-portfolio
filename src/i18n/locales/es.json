@@ -13,7 +13,9 @@
     "subtitle": "Desarrollador Full Stack",
     "description": "Apasionado por crear aplicaciones limpias, escalables y fáciles de usar con tecnologías modernas. Me especializo en React, Next.js y Node.js con más de 6 años de experiencia.",
     "cta": "Contáctame",
-    "viewProjects": "Ver Proyectos"
+    "viewProjects": "Ver Proyectos",
+    "downloadCV": "Descargar CV",
+    "downloading": "Descargando..."
   },
   "about": {
     "title": "Sobre Mí",
@@ -322,17 +324,15 @@
   },
   "contact": {
     "title": "Contáctame",
-    "subtitle": "Trabajemos juntos en tu próximo proyecto. Siempre estoy interesado en escuchar sobre nuevas oportunidades y desafíos emocionantes.",
+    "description": "Siempre estoy interesado en escuchar sobre nuevas oportunidades y proyectos emocionantes. No dudes en contactarme si te gustaría discutir posibles colaboraciones o simplemente quieres saludar.",
     "form": {
-      "title": "Envíame un mensaje",
       "name": "Nombre",
-      "email": "Correo",
+      "email": "Email",
       "message": "Mensaje",
       "send": "Enviar Mensaje",
       "sending": "Enviando...",
-      "namePlaceholder": "Tu nombre",
-      "emailPlaceholder": "tu.correo@ejemplo.com",
-      "messagePlaceholder": "Cuéntame sobre tu proyecto..."
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Error al enviar mensaje. Por favor intenta de nuevo."
     },
     "success": "¡Mensaje enviado exitosamente! Te responderé pronto.",
     "error": "Error al enviar mensaje. Por favor intenta de nuevo.",
@@ -385,5 +385,10 @@
     "effectiveCommunication": "Comunicación efectiva y trabajo en equipo a través de equipos diversos y culturas",
     "buildingRobustSystems": "Construyendo sistemas robustos y escalables que crecen con las necesidades del negocio",
     "rapidIteration": "Iteración rápida y despliegue con calidad y confiabilidad"
+  },
+  "stats": {
+    "loading": "Cargando estadísticas...",
+    "visits": "visitas",
+    "cvDownloads": "descargas CV"
   }
 }

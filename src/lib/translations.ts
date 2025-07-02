@@ -19,6 +19,8 @@ export interface Translations {
     description: string;
     cta: string;
     viewProjects: string;
+    downloadCV: string;
+    downloading: string;
   };
   about: {
     title: string;
@@ -185,17 +187,15 @@ export interface Translations {
   };
   contact: {
     title: string;
-    subtitle: string;
+    description: string;
     form: {
-      title: string;
       name: string;
       email: string;
       message: string;
       send: string;
       sending: string;
-      namePlaceholder: string;
-      emailPlaceholder: string;
-      messagePlaceholder: string;
+      success: string;
+      error: string;
     };
     success: string;
     error: string;
@@ -241,6 +241,11 @@ export interface Translations {
     effectiveCommunication: string;
     buildingRobustSystems: string;
     rapidIteration: string;
+  };
+  stats: {
+    loading: string;
+    visits: string;
+    cvDownloads: string;
   };
 }
 
